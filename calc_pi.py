@@ -2,6 +2,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def pi_est(n):
+    '''
+    Calcula Pi para n puntos que se evaluan vuaendo cuantos caen dentro y fuera de un circulo circunscrito por un cuadrado.
+    '''
     valorPi=4*sum((np.square(np.random.uniform(0, 1, n).tolist()) + np.square(np.random.uniform(0, 1, n).tolist()))<=1)/n
     return(valorPi)
 
